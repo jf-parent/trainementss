@@ -4,6 +4,15 @@ from random import sample, choice
 
 import click
 
+kettlebell = [
+    'Man maker',
+    'Upper Body Blast',
+    'Slingshot',
+    'Core',
+    'Leg burner',
+    'Swings'
+]
+
 mobilities = [
     "Neck",
     "Shoulder",
@@ -64,7 +73,11 @@ def random(number):
 
     #MOBILITY
     print '-'*80
-    print '[*]', choice(mobilities)
+    print '[*] Mobility =>', choice(mobilities)
+    print '-'*80
+
+    #KETTLEBELL
+    print '[*] Kettlebell =>', choice(kettlebell)
     print '-'*80
 
 cli.add_command(random)
