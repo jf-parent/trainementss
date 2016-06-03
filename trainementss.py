@@ -1,8 +1,28 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from random import sample, choice
 
 import click
+
+wim_hof_exercises = [
+    'Butterfly asana (Badhakonasana)',
+    'Forward bending (1 legs & 2 legs)',
+    'Back bending (Ūrdhvamukhaśvānāsana)',
+    'Ardha Matsyendrāsana',
+    'Lateral stretch',
+    'Headstand (Shirshasana)',
+    'Shoulder Stand (Salamba Sarvāṅgāsana I)',
+    'Warrior II (Vīrabhadrāsana II)',
+    'Crane (Bakāsana)',
+    'Raven (bakasana with leg extension)',
+    'Side plank (Vasiṣṭhāsana)',
+    'Split (Hanumanāsana)',
+    'Shelf (Mayūrāsana)',
+    'Astavakrasana (Eight angled Pose)',
+    'Hand stand',
+    'Horse Stance (馬步) (10 minutes with breathing)',
+]
 
 kettlebell = [
     'Man maker',
@@ -31,7 +51,16 @@ exercises = [
     "3min walking on the heel",
     "3min sitting on the heel",
     "Redressement assis",
-    "coup de pied lent",
+    "Front kick",
+    "Roundhouse kick",
+    "Side kick",
+    "Spin kick",
+    "Hook kick",
+    "Armada kick",
+    "Axe kick",
+    "Back kick",
+    "Shadow boxing",
+    "Forme",
     "Plank",
     "Squat",
     "Lounge",
@@ -68,6 +97,13 @@ def random(number):
     #BODYWEIGHT TRAINING
     print '[*] Pompe'
     samples = sample(exercises, number)
+    for s in samples:
+        print '[*]', s
+
+    #WIM-HOF EXERCISES
+    print '-'*80
+    print '\t**WIM-HOF**'
+    samples = sample(wim_hof_exercises, number)
     for s in samples:
         print '[*]', s
 
